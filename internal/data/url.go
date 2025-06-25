@@ -14,8 +14,7 @@ type URL struct {
 	MaxClicks      int64     `json:"max_clicks,omitempty"`
 	ExpirationDate time.Time `json:"expiration_date,omitempty"`
 	IsActive       bool      `json:"is_active,omitempty"`
-	//	UserID string `json:"user_id"`
-
+	UserID         string    `json:"user_id,omitempty"`
 }
 
 type URLCreateRequest struct {
