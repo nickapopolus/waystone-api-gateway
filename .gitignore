@@ -64,3 +64,4 @@ Thumbs.db
 *.pfx
 certs/
 keys/
+proto/*

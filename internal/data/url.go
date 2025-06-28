@@ -18,9 +18,9 @@ type URL struct {
 }
 
 type URLCreateRequest struct {
-	OriginalURL    string `json:"original_url"`
-	CustomSlug     string `json:"custom_slug,omitempty"`
-	MaxClicks      int64  `json:"max_clicks,omitempty"`
-	ExpirationDate string `json:"expiration_date,omitempty"`
-	IsActive       bool   `json:"is_active,omitempty"`
+	OriginalURL    string    `json:"original_url"`
+	CustomSlug     string    `json:"custom_slug,omitempty"`
+	MaxClicks      int64     `json:"max_clicks,omitempty"`
+	ExpirationDate time.Time `json:"expiration_date,omitempty"`
+	IsActive       bool      `json:"is_active,omitempty"`
 }
