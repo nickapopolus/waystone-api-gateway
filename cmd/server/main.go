@@ -14,7 +14,7 @@ func main() {
 
 	app := Config{}
 	app.Models = data.NewModels()
-	app.Router = rest.NewRouter(app.Models)
+	app.Router = rest.NewRouter()
 
 	fmt.Println("Starting API Gateway on port 8080")
 
